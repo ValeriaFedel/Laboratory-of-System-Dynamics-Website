@@ -1,0 +1,20 @@
+/* Stile Font globale  */
+    h1, h2, h3, h4, h5, h6, p, label, a, li {
+   font-family: "Georgia","Times New Roman", serif;}
+
+
+.wrapper {
+    width: 100%;
+    font-size: 12px;
+    margin: 5px 5px 5px 5px;
+}
+
+nav,footer {
+    display: none;
+}
+
+ #content_index li {
+    list-style-type: none;
+    margin-bottom: 5px;
+    margin-left: -15px;
+}

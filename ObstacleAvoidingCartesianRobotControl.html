@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+   	    <link rel="stylesheet" type="text/css" href="CSS.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="Print.css" media="print">
+        <link rel="stylesheet" type="text/css" href="960_12_col.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="mobile.css" media="screen">
+   	    <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,900italic,400italic,100italic' rel='stylesheet' type='text/css'>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+    	<title>Obstacle-avoiding Robot Control</title>
+	</head>
+
+	<body>
+
+        <div class="container_12" id="wrapper">
+	
+<!-- Intestazione sito -->
+        
+            <div class="grid_12" id="header"> 
+                <h1>Laboratory of System Dynamics</h1>
+   	        </div>
+            
+            
+<!-- Barra di navigazione -->
+     
+            <div class="grid_12" id="navbar">
+                <ul>
+				    <li><a href="Index.html">Home</a></li>
+				    <li><a href="Intothelab.html">Into the Lab</a></li>
+                    <li><a href="Thesis.html">Thesis</a></li>
+                </ul>
+            </div>           
+   
+
+<!-- Contenuti -->
+        
+        <div class="grid_12" id="crc">
+            
+            <header class="grid_12" id="titolo">
+                <h2>Stefano Miani - Ongoing Activity</h2>
+                <h3>Cartesian Robot Control</h3>
+                <h4>Robot motion control in a constrained environment</h4>
+            </header>
+            
+            <div class="grid_12" id="sez1">
+                <p class="grid_5" id="par1">The robot end effector has to move in the shown environment without hitting any of the objects. 
+                <br/>Given the specifications of the objects, a proper representation of the workspace is first 
+                computed off line (see Figure 1) along with a set of via points (the green dots in Figure 2) 
+                and a minimum distance tree (this part of the work was developed by Bart Van Arkel, visiting student from the Delft Technical University, The Netherlands).
+                </p>
+            
+                <figure class="grid_6 prefix_1" id="fig1">
+                    <img src="Media_files/Obstacle-avoiding%20robot%20control1.gif" alt="Workspace 2 and 3-D representation">
+                    <figcaption>Figure 1: Workspace 2 and 3-D representation</figcaption>
+                </figure>
+            </div>
+            
+            <div class="grid_5" id="sez2">    
+                <p id="par2">Then, given the current and target states, each motion is carried out on line by a two level controller according to the following scheme:</p>
+                    <ol>
+                        <li>the high-level controller computes the optimal sequence of via points via the minimum
+                        distance tree and passes the "next" optimal via point to the low level controller</li>
+                        <li>the low level controller avoids obstacle hitting during the motion.</li>
+                    </ol>
+                
+            </div>
+               
+                <figure class="grid_6 prefix_1" id="fig2">
+                    <img src="Media_files/Obstacle-avoiding%20robot%20control2.gif" alt="Via points, 2 and 3-D current position online interface">
+                    <figcaption>Figure 2: Via points, 2 and 3-D current position online interface</figcaption>
+                </figure>
+            
+            <div class="grid_10 suffix_1 prefix_1" id="sez3">
+                <p>A movie with the experimental results of such control scheme for different target values can be downloaded here</p>
+                <a href="Media_files/Obstacle-avoiding%20robot%20control1.mpg">Obstacle avoiding robot control - 3MB</a>
+                <p>Bi and tridimensional views of sample motions for different implemented low level control laws are depicted in Figs 3--8.</p>
+            </div>
+               
+            <div class="grid_12" id="sez4">
+                <figure class="grid_6" id="fig3">
+                    <img src="Media_files/Obstacle-avoiding%20robot%20control3.jpg" alt="2D sample motion with a linear saturated control law u=sat(Kx)">
+                    <figcaption>Figure 3: 2D sample motion with a linear saturated control law u=sat(Kx)</figcaption>
+                </figure>
+    
+                <figure class="grid_6" id="fig4">
+                    <img src="Media_files/Obstacle-avoiding%20robot%20control4.jpg" alt="2D sample motion with a linear saturated control law u=sat(Kx)">
+                    <figcaption>Figure 4: 2D sample motion with a linear saturated control law u=sat(Kx)</figcaption>
+                </figure>
+    
+                <figure class="grid_6" id="fig5">
+                    <img src="Media_files/Obstacle-avoiding%20robot%20control5.jpg" alt="2D sample motion with a nonlinear set based control law">
+                    <figcaption>Figure 5: 2D sample motion with a nonlinear set based control law</figcaption>
+                </figure>
+    
+                <figure class="grid_6" id="fig6">
+                    <img src="Media_files/Obstacle-avoiding%20robot%20control6.jpg" alt="2D and 3D sample motion with a nonlinear set based control law">
+                    <figcaption>Figure 6: 2D and 3D sample motion with a nonlinear set based control law</figcaption>
+                </figure>
+    
+                <figure class="grid_6" id="fig7">
+                    <img src="Media_files/Obstacle-avoiding%20robot%20control7.jpg" alt="Sample motion as in Fig 6, different view">
+                    <figcaption>Figure 7: Sample motion as in Fig 6, different view</figcaption>
+                </figure>
+    
+                <figure class="grid_6" id="fig8">
+                    <img src="Media_files/Obstacle-avoiding%20robot%20control8.jpg" alt="Sample motion as in Figs 6-7, different view">
+                    <figcaption>Figure 8: Sample motion as in Figs 6-7, different view</figcaption>
+                </figure>
+            </div>
+            
+        </div>
+            
+ <!-- Footer -->
+        
+        <footer class="grid_12" id="footer">
+            <img src="Media_files/logo_UNIUD.png" id="logo_UNIUD" alt="UNIUD Logo">
+        </footer>
+               
+        </div> <!-- Fine Wrapper -->
+    
+    
+    
+    </body>
+</html>
